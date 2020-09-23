@@ -1,0 +1,20 @@
+{
+  "name": "news-explorer-api",
+  "version": "1.0.0",
+  "description": "backend for Yandex.Praktikum project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roman-Statsura/news-explorer-api.git"
+  },
+  "author": "Roman Statsura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roman-Statsura/news-explorer-api/issues"
+  },
+  "homepage": "https://github.com/Roman-Statsura/news-explorer-api#readme"
+}
