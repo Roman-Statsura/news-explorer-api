@@ -4,7 +4,6 @@ const helmet = require('helmet');
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 const { errors } = require('celebrate');
 
 const NotFoundError = require('./errors/not-found');
@@ -25,7 +24,6 @@ mongoose.connect('mongodb://localhost:27017/news-explorer', {
   useUnifiedTopology: true,
 });
 
-app.use(cors({ credentials: true, origin: true }));
 app.use(helmet());
 app.use(cookieParser());
 
