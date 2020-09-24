@@ -11,13 +11,12 @@ const NotFoundError = require('./errors/not-found');
 const router = require('./routes/index');
 const limiter = require('./middlewares/rateLimiter');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
+const { MONGO_DB, PORT } = require('./utils/config');
 const { Messages } = require('./utils/messages');
-
-const { PORT = 3000 } = process.env;
 
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/news-explorer', {
+mongoose.connect(MONGO_DB, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: false,

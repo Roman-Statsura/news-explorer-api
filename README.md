@@ -3,8 +3,10 @@
 ### Бэкенд доступен по ссылкам:
 
 http://www.api.news11.students.nomoreparties.co
-
 http://api.news11.students.nomoreparties.co
+
+https://www.api.news11.students.nomoreparties.co
+https://api.news11.students.nomoreparties.co
 
 ## Публичный IPv4
 130.193.49.252
