@@ -2,12 +2,12 @@
 
 ### Бэкенд доступен по ссылкам:
 
-http://
+http://www.api.news11.students.nomoreparties.co
 
-http://
+http://api.news11.students.nomoreparties.co
 
 ## Публичный IPv4
-
+130.193.49.252
 
 ## Установка
 Склонируйте проект
