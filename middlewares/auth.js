@@ -2,7 +2,6 @@ const jwt = require('jsonwebtoken');
 const { Messages } = require('../utils/messages');
 const Unauthorized = require('../errors/unauthorized');
 
-// eslint-disable-next-line consistent-return
 module.exports = (req, res, next) => {
   const { NODE_ENV, JWT_SECRET } = process.env;
   if (!req.cookies.jwt) {

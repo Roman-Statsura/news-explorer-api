@@ -23,13 +23,14 @@ mongoose.connect(MONGO_DB, {
   useUnifiedTopology: true,
 });
 
+app.use(limiter);
+
 app.use(helmet());
 app.use(cookieParser());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(limiter);
 app.use(requestLogger);
 app.use(router);
 
@@ -46,15 +47,14 @@ app.use((req, res, next) => {
   next(new NotFoundError(Messages.sourceNotFound));
 });
 
-// eslint-disable-next-line no-unused-vars
 app.use((err, req, res, next) => {
   const { statusCode = 500, message } = err;
   res.status(statusCode).send({
     message: statusCode === 500 ? Messages.serverError : message,
   });
+  next();
 });
 
 app.listen(PORT, () => {
-  /* eslint no-console: ["error", { allow: ["log"] }] */
   console.log(`App listening on port ${PORT}`);
 });
