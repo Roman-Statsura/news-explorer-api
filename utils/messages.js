@@ -8,7 +8,7 @@ module.exports.Messages = {
   articleForbidden: 'Вы не можете удалить чужую статью',
   authorizationFailed: 'Неверная почта или пароль',
   auhorizationRequired: 'Необходима авторизация',
-  auhorizationSuccessful: 'Аутентификации  прошла успешно',
+  auhorizationSuccessful: 'Аутентификации прошла успешно',
   userAlreadyExists: 'Такой пользователь уже существует',
   userNotFound: 'Такого пользователя нет',
   linkRequired: 'Здесь должна быть ссылка',
