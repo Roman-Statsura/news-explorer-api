@@ -20,7 +20,7 @@ module.exports.login = (req, res, next) => {
           httpOnly: true,
           sameSite: true,
         })
-        .send(Messages.auhorizationSuccessful)
+        .send({ message: Messages.auhorizationSuccessful })
         .end();
     })
     .catch(() => {
